@@ -1,0 +1,19 @@
+{
+    "name": "flamix/flamix-bitrix24-and-woo-integrations",
+    "require": {
+        "php": "^7.4",
+        "flamix/plugin-helpers": "dev-main",
+        "flamix/b24-lead": "^1"
+    },
+    "autoload": {
+        "psr-4": {"FlamixLocal\\WooOrders\\": "local/"}
+    },
+    "authors": [
+        {
+            "name": "Flamix",
+            "email": "sales@flamix.email"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
