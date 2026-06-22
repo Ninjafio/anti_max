@@ -1,0 +1,30 @@
+# Игнорируем ядро WordPress и системные файлы
+/[a-z]*.php
+/wp-admin/
+/wp-includes/
+/wp-content/index.php
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+xmlrpc.php
+.htaccess
+wp-config.php
+
+# Игнорируем загруженные пользователями файлы и кэш
+/wp-content/uploads/
+/wp-content/blogs.dir/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/cache/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+
+# Игнорируем сторонние плагины и темы (если вы их не редактируете)
+# Если вы пишете свой плагин или тему, мы разрешим их ниже
+/wp-content/plugins/*
+/wp-content/themes/*
+
+# Игнорируем логи и системные файлы VS Code / OS
+*.log
+.vscode/
+.DS_Store
+Thumbs.db
