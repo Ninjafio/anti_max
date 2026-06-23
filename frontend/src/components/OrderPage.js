@@ -82,11 +82,12 @@ const handleInputChange = (e) => {
     }
   };
 
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   return (
     <div className="order-page">
       <HeaderBar
         title="Оформление заказа"
-        cartCount={cart.length}
+        cartCount={totalItems}
         onCartClick={openCart}
       />
 
